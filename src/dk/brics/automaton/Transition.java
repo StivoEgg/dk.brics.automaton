@@ -94,6 +94,11 @@ public class Transition implements Serializable, Cloneable {
 		return to;
 	}
 	
+	/** Sets destination of this transition. */
+	public void setDest(State to) {
+		this.to = to;
+	}
+
 	/** 
 	 * Checks for equality.
 	 * @param obj object to compare with
