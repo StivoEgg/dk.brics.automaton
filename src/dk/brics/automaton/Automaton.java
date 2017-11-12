@@ -652,6 +652,7 @@ public class Automaton implements Serializable, Cloneable {
 				for (State s : states) {
 					State p = m.get(s);
 					p.accept = s.accept;
+					p.colour = s.colour;
 					if (s == initial)
 						a.initial = p;
 					for (Transition t : s.transitions)

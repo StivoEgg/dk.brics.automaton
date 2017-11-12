@@ -51,7 +51,9 @@ public class State implements Serializable, Comparable<State> {
 	
 	int id;
 	static int next_id;
-	
+
+	int colour = 0;
+
 	/** 
 	 * Constructs a new state. Initially, the new state is a reject state. 
 	 */
@@ -187,5 +189,13 @@ public class State implements Serializable, Comparable<State> {
 	@Override
 	public int hashCode() {
 		return super.hashCode();
+	}
+
+	public int getColour() {
+		return this.colour;
+	}
+
+	public void setColour(int var) {
+		this.colour = var;
 	}
 }
